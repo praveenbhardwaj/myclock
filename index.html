@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <script>
+    let a;
+    let date;
+    let time;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    setInterval(() => {
+        a = new Date(); 
+        date = a.toLocaleDateString(undefined, options);
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time + "<br>on " + date;
+    }, 1000);
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form-signin">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Live Date & Time Project</h1>
+        <p>Build with the help of <code>HTML , Bootstrap & JAVASCRIPT</code>. </p>
+      </div>
+
+
+      <div class="jumbotron">
+        <h1 class="display-4">Current time Is: <span id="time"></span></h1>
+       
+        <hr class="my-4">
+        <p>It uses <code> Bootstrap</code> classes for designing and <code> JAVASCRIPT</code> for rest.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Browse the time</a>
+      </div>
+      
+      
+    </form>
+     
+    <footer class="blog-footer text-center my-4" style="margin-top:10px;">
+      <p> This is a Templete build for <code> DATE & TIME project </code> by <a href="https://twitter.com/Azadhindsoch">@AzadHindSoch</a>.</p>
+      <p>
+       
+      </p>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
